@@ -8,14 +8,17 @@ function Notes(props) {
   return (
     <div className='noteContainer'>
         {
+            Notesdata == [] ?  <h1>loading...</h1>
+            :
             Notesdata?.map((val)=>{
                 return(
-                    <div className='note'>
+                    <div className='note' key={val.element}>
                         <h2 id={val.element}>{val.element}</h2>
                         <p >{val.desc}</p>
                     </div>
                 )
             })
+           
         }
     </div>
   )

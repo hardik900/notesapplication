@@ -7,15 +7,17 @@ function QueryName(props) {
   return (
     <div>
         {
-            Querydata?.map((val1)=>{
-                let hrefValue = `#${val1.element}`;
-                return(
-                    <>
-                        <a href={hrefValue}><p className='p'>{val1.element}</p></a>
-                        {/* <p>{val.queryDesc}</p> */}
-                    </>
-                )
-            })
+           Querydata == [] ? <h1>loading...</h1>
+           :
+           Querydata?.map((val1)=>{
+            let hrefValue = `#${val1.element}`;
+            return(
+                <div key={val1.element}>
+                    <a href={hrefValue} ><p className='p'>{val1.element}</p></a>
+                    {/* <p>{val.queryDesc}</p> */}
+                </div>
+            )
+        }) 
         }
     </div>
   )

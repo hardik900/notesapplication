@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Nav.css"
 import { NavLink } from 'react-router-dom'
+import Courses from '../Courses'
 function Nav() {
+ 
   return (
     <nav className='nav'>
         <ul>
@@ -10,6 +12,7 @@ function Nav() {
             <li><NavLink to="/course/css">CSS</NavLink></li>
             <li><NavLink to="/course/javascript">JS</NavLink></li>
         </ul>
+        {/* <Courses/> */}
     </nav>
   )
 }

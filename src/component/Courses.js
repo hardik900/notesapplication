@@ -8,9 +8,13 @@ function Courses(){
     const [CourseData, setCourseData] = useState([])
     const params = useParams()
     let data = params.course
-    // console.log(params,"params")
-    console.log(params.course,"params")
-    // let CourseData = []
+    let click = data
+    console.log(click,"click")
+    console.log(data,"params")
+
+    useEffect(() => {
+        getData()
+    }, [click])
     function getData() {
         let obj = {
             method : "get",
@@ -19,22 +23,19 @@ function Courses(){
             //     "Content-Type": "application/json" ,
             // }
         }
+        
         fetch(`http://localhost:5000/${data}`,obj)
-            .then((resp) => {
-                resp.json()
-                    .then((response) => {
-                        console.log(response, "response")
-                        setCourseData(response)
-                        // CourseData = response
-                        console.log(response, "response")
-                    }) 
-            })
+        .then((resp) => {
+            resp.json()
+                .then((response) => {
+                    console.log(response, "response")
+                    setCourseData(response)
+                    console.log(response, "response")
+                }) 
+        })
     }
-    useEffect(() => {
-        getData()
-    }, [CourseData])
    return(
-    <>
+    <>  
         <Nav/>
         <div className="notesContainer">
             <div className="queryName">
