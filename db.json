@@ -1,0 +1,464 @@
+{
+    "sql": [
+      {
+          "element": "SHOW DATABASES",
+          "desc": "This query is used to show the number of databases."
+      },
+      {
+          "element": "SHOW TABLES",
+          "desc": "This query is used to show the number of tables."
+      },
+      {
+          "element": "USE AFTAB_SHOP",
+          "desc": "This query is used to select the database to which you want to work."
+      },
+      {
+          "element": "CREATE DATABASE AFTAB_SHOP",
+          "desc": "This query is used to create a database."
+      },
+      {
+          "element": "CREATE TABLE CUSTOMER(id INT, name VARCHAR(255), address VARCHAR(255))",
+          "desc": "This query is used to create a table with columns (attributes). Note: We can't create a table without defining column names."
+      },
+      {
+          "element": "DESC CUSTOMER",
+          "desc": "This query is used to show the schema of the table."
+      },
+      {
+          "element": "INSERT INTO CUSTOMER VALUES(2, 'Samuel', 'Thane West')",
+          "desc": "This query is used to insert a single entry (row) into the table."
+      },
+      {
+          "element": "INSERT INTO CUSTOMER VALUES(2, 'Samuel', 'Thane West'), (3, 'Anderson', 'Thane East'), (4, 'Roy', 'Airoli')",
+          "desc": "This query is used to insert multiple entries (rows) into the table. For each insertion in a row, we have to start with an open parenthesis and close it, separated by commas."
+      },
+      {
+          "element": "INSERT INTO CUSTOMER(id, name) VALUES(5, 'Tanu')",
+          "desc": "This query is used to insert values into specific columns (attributes) of the table."
+      },
+      {
+          "element": "SELECT name FROM CUSTOMER",
+          "desc": "This query is used to show all the names from the given table."
+      },
+      {
+          "element": "SELECT * FROM CUSTOMER",
+          "desc": "This query is used to show all the rows from the given table."
+      }
+      ],
+    "html": [
+      {
+          "element": "a",
+          "desc": "Defines a hyperlink."
+      },
+      {
+          "element": "abbr",
+          "desc": "Defines an abbreviation or acronym."
+      },
+      {
+          "element": "address",
+          "desc": "Defines contact information for the author/owner of a document."
+      },
+      {
+          "element": "area",
+          "desc": "Defines a clickable area within an image map."
+      },
+      {
+          "element": "article",
+          "desc": "Defines an independent, self-contained piece of content."
+      },
+      {
+          "element": "aside",
+          "desc": "Defines content aside from the content it is placed in (like a sidebar)."
+      },
+      {
+          "element": "audio",
+          "desc": "Defines sound content."
+      },
+      {
+          "element": "b",
+          "desc": "Defines bold text."
+      },
+      {
+          "element": "base",
+          "desc": "Defines a base URL for relative URLs in a document."
+      },
+      {
+          "element": "bdi",
+          "desc": "Isolates a part of text that might be formatted in a different direction from other text outside it."
+      },
+      {
+          "element": "bdo",
+          "desc": "Overrides the current text direction."
+      },
+      {
+          "element": "blockquote",
+          "desc": "Defines a section that is a block of content from another source."
+      },
+      {
+          "element": "body",
+          "desc": "Defines the document's body."
+      },
+      {
+          "element": "br",
+          "desc": "Defines a line break."
+      },
+      {
+          "element": "button",
+          "desc": "Defines a clickable button."
+      },
+      {
+          "element": "canvas",
+          "desc": "Defines a container for graphics."
+      },
+      {
+          "element": "caption",
+          "desc": "Defines a table caption."
+      },
+      {
+          "element": "cite",
+          "desc": "Defines the title of a work."
+      },
+      {
+          "element": "code",
+          "desc": "Defines a piece of computer code."
+      },
+      {
+          "element": "col",
+          "desc": "Defines a column in a table."
+      },
+      {
+          "element": "colgroup",
+          "desc": "Defines a group of columns in a table."
+      },
+      {
+          "element": "data",
+          "desc": "Links a piece of content with a machine-readable translation."
+      },
+      {
+          "element": "datalist",
+          "desc": "Defines a list of pre-defined options for an `<input>` element."
+      },
+      {
+          "element": "dd",
+          "desc": "Defines a description value in a description list."
+      },
+      {
+          "element": "del",
+          "desc": "Defines text that has been deleted from a document."
+      },
+      {
+          "element": "details",
+          "desc": "Defines additional details that the user can view or hide."
+      },
+      {
+          "element": "dfn",
+          "desc": "Defines a definition term."
+      },
+      {
+          "element": "dialog",
+          "desc": "Defines a dialog box or window."
+      },
+      {
+          "element": "div",
+          "desc": "Defines a division or section in a document."
+      },
+      {
+          "element": "dl",
+          "desc": "Defines a description list."
+      },
+      {
+          "element": "dt",
+          "desc": "Defines a term/name in a description list."
+      },
+      {
+          "element": "em",
+          "desc": "Defines emphasized text."
+      },
+      {
+          "element": "embed",
+          "desc": "Defines a container for an external application or interactive content."
+      },
+      {
+          "element": "fieldset",
+          "desc": "Groups related elements in a form."
+      },
+      {
+          "element": "figcaption",
+          "desc": "Defines a caption for a `<figure>` element."
+      },
+      {
+          "element": "figure",
+          "desc": "Defines self-contained content, like images, illustrations, diagrams, or code snippets."
+      },
+      {
+          "element": "footer",
+          "desc": "Defines a footer for a document or section."
+      },
+      {
+          "element": "form",
+          "desc": "Defines an HTML form for user input."
+      },
+      {
+          "element": "h1",
+          "desc": "Defines HTML headings (h1 to h6)."
+      },
+      {
+          "element": "h2",
+          "desc": "Defines HTML headings (h1 to h6)."
+      },
+      {
+          "element": "h3",
+          "desc": "Defines HTML headings (h1 to h6)."
+      },
+      {
+          "element": "h4",
+          "desc": "Defines HTML headings (h1 to h6)."
+      },
+      {
+          "element": "h5",
+          "desc": "Defines HTML headings (h1 to h6)."
+      },
+      {
+          "element": "h6",
+          "desc": "Defines HTML headings (h1 to h6)."
+      },
+      {
+          "element": "head",
+          "desc": "Defines the head section of a document."
+      },
+      {
+          "element": "header",
+          "desc": "Defines a header for a document or section."
+      },
+      {
+          "element": "hgroup",
+          "desc": "Defines a group of headings."
+      },
+      {
+          "element": "hr",
+          "desc": "Defines a thematic break or horizontal rule."
+      },
+      {
+          "element": "html",
+          "desc": "Defines the root of an HTML document."
+      },
+      {
+          "element": "i",
+          "desc": "Defines italic text."
+      },
+      {
+          "element": "iframe",
+          "desc": "Defines an inline frame."
+      },
+      {
+          "element": "img",
+          "desc": "Defines an image."
+      },
+      {
+          "element": "input",
+          "desc": "Defines an input control."
+      },
+      {
+          "element": "ins",
+          "desc": "Defines text that has been inserted into a document."
+      },
+      {
+          "element": "kbd",
+          "desc": "Defines keyboard input."
+      },
+      {
+          "element": "label",
+          "desc": "Defines a label for an `<input>` element."
+      },
+      {
+          "element": "legend",
+          "desc": "Defines a caption for a `<fieldset>` element."
+      },
+      {
+          "element": "li",
+          "desc": "Defines a list item."
+      },
+      {
+          "element": "link",
+          "desc": "Defines the relationship between a document and an external resource (most used to link to stylesheets)."
+      },
+      {
+          "element": "main",
+          "desc": "Defines the main content of a document."
+      },
+      {
+          "element": "map",
+          "desc": "Defines an image map."
+      },
+      {
+          "element": "mark",
+          "desc": "Defines text that has been highlighted or marked."
+      },
+      {
+          "element": "meta",
+          "desc": "Defines metadata about an HTML document."
+      },
+      {
+          "element": "meter",
+          "desc": "Defines a scalar measurement within a known range (like a disk usage gauge)."
+      },
+      {
+          "element": "nav",
+          "desc": "Defines navigation links."
+      },
+      {
+          "element": "noscript",
+          "desc": "Defines an alternative content for users that have disabled scripts in their browser."
+      },
+      {
+          "element": "object",
+          "desc": "Defines an embedded object."
+      },
+      {
+          "element": "ol",
+          "desc": "Defines an ordered list."
+      },
+      {
+          "element": "optgroup",
+          "desc": "Defines a group of related options in a dropdown list."
+      },
+      {
+          "element": "option",
+          "desc": "Defines an option in a dropdown list."
+      },
+      {
+          "element": "output",
+          "desc": "Defines the result of a calculation."
+      },
+      {
+          "element": "p",
+          "desc": "Defines a paragraph."
+      },
+      {
+          "element": "param",
+          "desc": "Defines a parameter for an object."
+      },
+      {
+          "element": "picture",
+          "desc": "Defines a container for multiple `<source>` elements for responsive images."
+      },
+      {
+          "element": "pre",
+          "desc": "Defines preformatted text."
+      },
+      {
+          "element": "progress",
+          "desc": "Defines the progress of a task."
+      },
+      {
+          "element": "q",
+          "desc": "Defines a short quotation."
+      },
+      {
+          "element": "rp",
+          "desc": "Defines what to show in browsers that do not support ruby annotations."
+      },
+      {
+          "element": "rt",
+          "desc": "Defines an explanation or pronunciation of characters (used in East Asian typography)."
+      },
+      {
+          "element": "ruby",
+          "desc": "Defines a ruby annotation (used in East Asian typography)."
+      }
+    ],
+    "css" : [
+        {
+          "element": "body",
+          "desc": "Sets the default font and background color for the entire page."
+        },
+        {
+          "element": "h1, h2, h3, h4, h5, h6",
+          "desc": "Defines styles for all header elements, including font size, weight, and margin."
+        },
+        {
+          "element": "p",
+          "desc": "Controls the appearance of paragraphs, including line height, margin, and font size."
+        },
+        {
+          "element": "a",
+          "desc": "Styles anchor links, including color, text decoration, and hover effects."
+        },
+        {
+          "element": "div",
+          "desc": "A generic container for grouping and styling blocks of content."
+        },
+        {
+          "element": "img",
+          "desc": "Specifies how images should be displayed, including width, height, and borders."
+        },
+        {
+          "element": "ul, ol",
+          "desc": "Styles unordered and ordered lists, including list-style type and padding."
+        },
+        {
+          "element": "table",
+          "desc": "Styles tables, including borders, spacing, and alignment of table cells."
+        },
+        {
+          "element": "form",
+          "desc": "Styles forms, including input fields, labels, and button appearances."
+        },
+        {
+          "element": "input",
+          "desc": "Defines the appearance of input fields within forms, including type-specific styles."
+        }
+      ],
+      "javascript":[
+        {
+          "element": "var",
+          "desc": "Declares a variable that can be re-assigned. It's function-scoped and is used to store data."
+        },
+        {
+          "element": "let",
+          "desc": "Declares a block-scoped variable that can be re-assigned. It's preferred over 'var' for better scope management."
+        },
+        {
+          "element": "const",
+          "desc": "Declares a block-scoped variable that cannot be re-assigned after its initial assignment. It is used for constants."
+        },
+        {
+          "element": "function",
+          "desc": "Defines a function. Functions can be declared in various ways, including function declarations and function expressions."
+        },
+        {
+          "element": "if...else",
+          "desc": "A control flow statement used to execute code based on a condition. 'else' provides an alternative block if the condition is false."
+        },
+        {
+          "element": "for loop",
+          "desc": "A control flow statement used for iteration, executing a block of code a specific number of times."
+        },
+        {
+          "element": "while loop",
+          "desc": "A control flow statement that executes a block of code as long as a specified condition is true."
+        },
+        {
+          "element": "try...catch",
+          "desc": "A statement used for handling exceptions. 'try' contains code that might throw an error, while 'catch' handles the error."
+        },
+        {
+          "element": "async/await",
+          "desc": "Syntax for working with asynchronous code. 'async' declares a function as asynchronous, and 'await' pauses execution until a promise is resolved."
+        },
+        {
+          "element": "fetch",
+          "desc": "A function used to make network requests and handle responses. It's a modern alternative to XMLHttpRequest."
+        },
+        {
+          "element": "class",
+          "desc": "Defines a class for creating objects with shared properties and methods. Introduced in ES6, it’s syntactic sugar over JavaScript's existing prototype-based inheritance."
+        },
+        {
+          "element": "arrow functions",
+          "desc": "A shorter syntax for writing functions. They do not have their own 'this', 'arguments', or 'super' context."
+        }
+      ]
+      
+      
+  }
