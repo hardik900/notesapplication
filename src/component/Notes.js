@@ -8,7 +8,7 @@ function Notes(props) {
   return (
     <div className='noteContainer'>
         {
-            Notesdata == [] ?  <h1>loading...</h1>
+            Notesdata == null ? <h1 style={{display:'inline-block', marginTop:'90px', }}>loading...</h1> 
             :
             Notesdata?.map((val)=>{
                 return(

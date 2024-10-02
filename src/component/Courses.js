@@ -5,16 +5,14 @@ import "./Home.css"
 import Nav from "./Navbar/Nav";
 import { useParams } from "react-router-dom";
 function Courses(){
-    const [CourseData, setCourseData] = useState([])
+    const [CourseData, setCourseData] = useState(null)
     const params = useParams()
     let data = params.course
     let click = data
     console.log(click,"click")
     console.log(data,"params")
 
-    useEffect(() => {
-        getData()
-    }, [click])
+    
     function getData() {
         let obj = {
             method : "get",
@@ -34,6 +32,9 @@ function Courses(){
                 }) 
         })
     }
+    useEffect(() => {
+        getData()
+    }, [click])
    return(
     <>  
         <Nav/>

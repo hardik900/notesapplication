@@ -2,12 +2,12 @@ import React from 'react'
 import data from './Data'
 
 function QueryName(props) {
-    let Querydata = props?.data
+    let Querydata = props.data
     console.log(Querydata,"props inside queryname")
   return (
     <div>
         {
-           Querydata == [] ? <h1>loading...</h1>
+           Querydata== null ? <h1 style={{display:'inline-block', marginTop:'90px'}}>loading...</h1>
            :
            Querydata?.map((val1)=>{
             let hrefValue = `#${val1.element}`;
